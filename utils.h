@@ -19,7 +19,8 @@
 
 // Preprocessor Definition checks must be done with #ifdef/#ifndef but we use
 // these macros to cut down on repetition in error messages.
-#define ERROR_DEFINE_NOT_PRESENT(define) \
+#define ERROR_DEFINE_NOT_PRESENT(define)                                       \
   _Static_assert(0, #define " (preprocessor define) is not defined")
-#define ERROR_DEFINE_PRESENT(define) \
-  _Static_assert(0, #define " (preprocessor define) is defined and should not be")
+#define ERROR_DEFINE_PRESENT(define)                                           \
+  _Static_assert(0, #define                                                    \
+                 " (preprocessor define) is defined and should not be")
