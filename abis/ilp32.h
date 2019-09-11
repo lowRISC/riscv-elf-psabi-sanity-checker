@@ -62,11 +62,11 @@ _Static_assert(WINT_MIN == (wint_t)0, "wint_t should be an unsigned type");
 
 // ABI-Specific Preprocessor Defines:
 #ifndef __ELF__
-    _Static_assert(0, "__ELF__ (preprocessor define) not defined");
+ERROR_DEFINE_NOT_PRESENT(__ELF__);
 #endif
 
 #ifndef __riscv
-_Static_assert(0, "__riscv (preprocessor define) not defined");
+ERROR_DEFINE_NOT_PRESENT(__riscv);
 #endif
 
 // Checks for ILP32 ABI Only
@@ -74,22 +74,19 @@ _Static_assert(0, "__riscv (preprocessor define) not defined");
 
 // ABI-Specific Preprocessor Defines:
 #  ifndef __riscv_float_abi_soft
-_Static_assert(0, "__riscv_float_abi_soft (preprocessor define) not defined");
+ERROR_DEFINE_NOT_PRESENT(__riscv_float_abi_soft);
 #  endif
 
 #  ifdef __riscv_float_abi_single
-_Static_assert(0, "__riscv_float_abi_float (preprocessor define) is defined "
-                  "and should not be");
+ERROR_DEFINE_PRESENT(__riscv_float_abi_float);
 #  endif
 
 #  ifdef __riscv_float_abi_double
-_Static_assert(0, "__riscv_float_abi_double (preprocessor define) is defined "
-                  "and should not be")
+ERROR_DEFINE_PRESENT(__riscv_float_abi_double);
 #  endif
 
 #  ifdef __riscv_abi_rve
-    _Static_assert(
-        0, "__riscv_abi_rve (preprocessor define) is defined and should not be")
+ERROR_DEFINE_PRESENT(__riscv_abi_rve);
 #  endif
 
 #endif
