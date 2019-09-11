@@ -134,7 +134,7 @@ case "${target}" in
     check rv32gc ilp32d
 
     # RISC-V 32, ILP32E
-    if ! [ "${SKIP_ILP32E}" = "true" ]; then
+    if ! [ "${SKIP_ILP32E:-false}" = "true" ]; then
       # This ABI is not fully defined yet, so we consider it optional in this
       # sanity checker.
       check rv32i ilp32e
