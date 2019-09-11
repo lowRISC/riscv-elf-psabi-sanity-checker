@@ -1,4 +1,9 @@
-// These macros are for compile-time sanity checks    -*- C -*-
+// RISC-V Sanity Check Helpers     -*- C -*-
+// Copyright lowRISC contributors.
+// Licensed under the Apache License, Version 2.0, see LICENSE for details.
+// SPDX-License-Identifier: Apache-2.0
+
+// These macros are for compile-time sanity checks
 
 // Check sizeof(type) == size, _Alignof(type) == align
 #define CHECK_SIZE_ALIGN(type, size, align)                                    \

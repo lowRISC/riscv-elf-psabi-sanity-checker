@@ -36,9 +36,9 @@ The C preprocessor definition checks are based on both
 
 The RISC-V ELF psABI Sanity Checker (for C compilers) in this repository is:
 
- &copy; 2019 lowRISC CIC
+ &copy; 2019 lowRISC contributors
 
-It is licensed under the Apache 2.0 licence, available in LICENSE.txt.
+It is licensed under the Apache 2.0 licence, available in LICENSE.
 
 [riscv-elf-psabi-doc]: https://github.com/riscv/riscv-elf-psabi-doc/blob/master/riscv-elf.md
 [riscv-toolchain-conventions]: https://github.com/riscv/riscv-toolchain-conventions/blob/master/README.mkd#cc-preprocessor-definitions
