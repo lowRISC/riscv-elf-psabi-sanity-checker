@@ -12,7 +12,7 @@ ERROR_DEFINE_PRESENT(__riscv_float_abi_soft);
 #endif
 
 #ifdef __riscv_float_abi_single
-ERROR_DEFINE_PRESENT(__riscv_float_abi_single)
+ERROR_DEFINE_PRESENT(__riscv_float_abi_single);
 #endif
 
 #ifndef __riscv_float_abi_double
