@@ -3,6 +3,8 @@
 // Licensed under the Apache License, Version 2.0, see LICENSE for details.
 // SPDX-License-Identifier: Apache-2.0
 
+#pragma once
+
 // These macros are for compile-time sanity checks
 
 // Check sizeof(type) == size, _Alignof(type) == align
