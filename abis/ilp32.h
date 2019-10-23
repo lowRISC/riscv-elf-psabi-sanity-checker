@@ -57,6 +57,7 @@ CHECK_EQ("_Alignof(max_align_t)", 16, _Alignof(max_align_t));
 // Standard C Types: Implementation Defined Signedness
 _Static_assert(CHAR_MIN == (char)0 && CHAR_MAX == UCHAR_MAX,
                "char should be an unsigned type");
+_Static_assert(CHAR_BIT == 8, "CHAR_BIT should be 8");
 
 // ABI-Specific Preprocessor Defines:
 #ifndef __ELF__
